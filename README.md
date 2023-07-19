@@ -4,7 +4,7 @@ I'm 17, i have done this website just for school...
 
 If U have some tip about that write me here...
 
-It should be a good thinks to integrate also a few php features
+It should be a good thing to integrate also a few php features
 
 Thanks
 
