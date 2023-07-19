@@ -1,0 +1,315 @@
+body
+{
+  overflow-x:hidden;
+  background-color: antiquewhite;
+  margin:0;
+  padding:0;
+  font-family: Coffe;
+
+}
+
+
+@font-face {
+  src: url("../FONT/Coffee and Crafts.ttf");
+  font-family:Coffe;
+
+  font-weight: bold; /* Defaul usi questo, puoi mettere bold al posto (NON BOLD). */
+  font-style: normal;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+
+  opacity: 90%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.test
+{
+  height: 100vh;
+
+}
+.titolo
+{
+  text-shadow: 3px 3px #1c1c1c;
+  background-color: transparent;
+  font-size: 90pt;
+  margin-bottom:10%;
+  color: peachpuff;
+}
+.sottotitolo
+{
+  color:antiquewhite;
+  text-shadow: 6px 6px 6px #1c1c1c;
+}
+.btNav
+{
+  padding-right: 4px;
+  padding-left: 4px;
+  border:2px solid #2c2c2c;
+  background-color: #2c2c2c;
+  color:peachpuff;
+  border-radius: 15px;
+
+}
+.bordino
+{
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-bottom: 0;
+  border-right: 0;
+  border-color: orange;
+}
+.bordino1
+{
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-bottom: 0;
+  border-right: 0;
+  border-color: orange;
+}
+.bordino2
+{
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-color: orange;
+}
+.bordino3
+{
+  padding: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-color: orange;
+}
+
+.content
+{
+  box-shadow: 10px 10px 100px #2c2c2c;
+  background-color: #2c2c2c;
+  opacity: 0.95;
+  border: 2px solid #2c2c2c;
+  border-radius: 20px 0px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+}
+
+.scritta
+{
+  color:antiquewhite;
+  font-size: 40px;
+}
+
+.scritta1
+{
+  color:antiquewhite;
+  font-size: 140px;
+
+}
+
+.navBG
+{
+  background-color: #2c2c2c;
+}
+
+.btNav:hover
+{
+  padding-right: 4px;
+  padding-left: 4px;
+  border-color: peachpuff;
+  /*  color:#2c2c2c; */
+  color:peachpuff;
+  transition-duration: 250ms;
+  text-shadow: 5px 5px 12px #1c1c1c;
+}
+
+.btNavA
+{
+  border:2px solid #2c2c2c;
+  padding-right: 4px;
+  padding-left: 4px;
+  background-color: #2c2c2c;
+  color:antiquewhite;
+  border-radius: 15px;
+
+}
+
+.btNavA:hover
+{
+  padding-right: 4px;
+  padding-left: 4px;
+  border:2px solid #2c2c2c;
+  color:#2c2c2c;
+  transition-duration: 250ms;
+  text-shadow: 5px 5px 12px #2c2c2c;
+}
+
+
+
+.feedL
+{
+  background-color: peachpuff;
+}
+.feedB
+{
+  background-color: #212529;
+  color:peachpuff;
+}
+
+.ombreggia
+{
+  box-shadow: 0 0 7px;
+}
+
+
+
+/*--------------------------- INIZIO ICONE ---------------------------*/
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+.icona
+{
+  width: 20px;
+
+}
+.links
+{
+  color: #0192c0;
+  text-decoration: none;
+
+}
+.links:hover
+{
+  color: #0192c0;
+  text-decoration: underline dashed;
+
+}
+
+.beer{
+  height: 119.7vh;
+}
+
+.beer2{
+  position: relative;
+  width: 100vh;
+  height: 119.7vh;
+}
+
+.birre
+{
+  margin: 10px;
+  background-color: #3c3c3c;
+  opacity: 0.9;
+  height: 70vh;
+  position: relative;
+
+}
+.birreBG
+{
+  overflow: auto;
+  border-bottom: 2px;
+  border-right: 2px;
+  border-left: 0;
+  border-top:0;
+  border-style: solid;
+
+  border-color: orange;
+  position:absolute;
+  inset: 5px;
+
+}
+
+.birreBG1
+{
+  overflow: auto;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 2px;
+  border-top:2px;
+  border-style: solid;
+
+  border-color: orange;
+  position:absolute;
+  inset: 8px;
+
+}
+
