@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Benvenuti al Barot</title>
+
+  <!-- --------------------------- BOOTSTRAP + CSS --------------------------- -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="BOOTSTRAP/bootstrap.css">
+  <script src="BOOTSTRAP/bootstrapBundle.js"></script>
+  <link rel="stylesheet" href="CSS/index.css">
+
+  <!-- --------------------------- JAVA SCRIPT: SCROLL-REVEAL --------------------------- -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <!-- ---------------------------ICONE-SOCIAL-MEDIA--------------------------- -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- --------------------------- COLORA MODAL + RISPOSTA FEED --------------------------- -->
+  <script src="JS/index.js"></script>
+
+  <!-- --------------------------- SweetAlert MessageBox --------------------------- -->
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+
+
+
+
+
+<body>
+
+<!-- --------GRAFICA ANIMATA---------- -->
+
+<div class="wrapper">
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <!-- EFFETTO 3D -->
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <!-- RIEMPIRLO UN ATTIMO -->
+  <span></span>
+  <span></span>
+
+  <span></span>
+  <span></span>
+
+
+
+
+</div>
+<!-- -------- FINE GRAFICA ANIMATA---------- -->
+
+ <!-- -----------------------------------------------  -|_|_|-|_|_|- ------------------------------------------------------ -->
+ <!-- -----------------------------------------------  -DISCLAIMER-  ------------------------------------------------------ -->
+ <!-- -----------------------------------------------  -|_|_|-|_|_|- ------------------------------------------------------ -->
+
+ <!-- Questo sito web è un progetto scolastico e possiede molti Problemi da Risolvere / Miglioramenti da fare:
+
+    La Funzione ScrollReveal durante la visualizzazione da telefono non permette di visualizzare al meglio le immagini, il problema mi è ancora sconosciuto ma ci sitamo lavorando.
+
+  -->
+
+
+<!-- Carousel -->
+<div id="demo" class="carousel carousel-fade  slide" data-bs-ride="carousel">
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="IMG/1.jpg" alt="Il locale" class="imgopc d-block test">
+    </div>
+    <div class="carousel-item">
+      <img src="IMG/2.jpg" alt="Il personale" class="imgopc d-block test">
+
+    </div>
+
+    <div class="carousel-item">
+      <img src="IMG/3.jpg" alt="Il posto" class="imgopc d-block test">
+
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- --------------------------------- Fine-Carosel ----------------------------------- -->
+
+<div class="content">
+  <div class="bordino">
+    <div class="bordino1">
+      <div class="bordino2">
+        <div class="bordino3">
+          <small class="scritta">Benvenuti al bar/trattoria</small>
+          <h1 class="scritta1">Dal Barot</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+ <!-- ---------------------------------INIZIO-NAV-BAR----------------------------------- -->
+
+<nav class="navbar navbar-expand-sm navBG navbar-dark sticky-top">
+
+ <!-- <a class="navbar-brand ms-5" > <img class="icona" src="IMG/IconaAcc.jpg" > <p id="Accessotxt"> Accesso non eseguito </p> </a> -->
+
+  <div class="container-fluid d-flex justify-content-center ">
+
+    <a class="navbar-brand fs-3 ms-3 btNav RevealR" href="Registrati.html"> Registrati </a>
+    <a class="navbar-brand fs-3 ms-3 btNav RevealR" href="Login.html"> Accedi </a>
+    <a class="navbar-brand fs-3 ms-3 btNav RevealR" href="Menu.html"> Menù </a>
+    <a class="navbar-brand fs-3 ms-3 btNav RevealL" href="Birra.html">  La nostra Birra </a>
+    <a class="navbar-brand fs-3 ms-3 btNav RevealL" href="#"  data-bs-toggle="modal" data-bs-target="#myModal" >  Lascia un Feedback </a>
+  </div>
+</nav>
+
+
+
+
+<!-- ---------------------------------INIZIO-FEEDBACK----------------------------------- -->
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header feedB">
+        <h4 class="modal-title">Feedback</h4>
+        <button type="button" class="btn-close feedL" data-bs-dismiss="modal"> </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body feedL rounded">
+        <p class="fs-4">Dacci una valutazione!</p>
+
+        <label for="customRange" class="form-label float-start">Pessimo</label>
+
+        <label for="customRange" class="form-label float-end ">Fantastico</label>
+        <input type="range" class="form-range" id="customRange" name="points" min="0" max="5">
+
+        <p class="fs-4" > Lascia un commento:</p>
+        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Ciao, penso che il vostro sito sia..."></textarea>
+
+        <button type="button" class="float-end btNav mt-3 fs-4" data-bs-dismiss="modal" onclick="Pulisci()"> Invia  </button>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------------------FINE-NAV-BAR + FEEDBACK----------------------------------- -->
+
+
+
+
+<!-- ---------------------------------INIZIO PARTE 1--------------------------------- -->
+
+<div class="container-fluid mt-5">
+
+  <div class="row mx-5 ms-5">
+
+    <div class="col-sm-4 p-4 mb-4 shadow-lg" style="background-color:peachpuff">
+
+
+
+      <h2 class="RevealL">-Ordina direttamente dal tavolo!</h2>
+      <h5>Con la nuova e rivoluzionaria funzione <a class="links" href="Menu.html">Ordina dal tavolo -></a>  puoi scegliere il tuo piatto preferito tra un’ampia varietà di opzioni con un semplice tocco sul tuo smartphone e riceverlo direttamente al tuo tavolo in pochi istanti!</h5>
+
+      <h2 class="RevealL">-La nostra birra</h2>
+      <p class="fs-5"> Se ami le birra, non puoi perderti la nostra nuova creazione: una birra dal gusto intenso e aromatico, prodotta con ingredienti naturali e selezionati. La nostra birra è frutto di una lunga passione e di una cura meticolosa in fase di produzione. Ogni sorso ti regalerà una sensazione di freschezza e di piacere.<a class="links" href="Birra.html"> Provala subito! -></a>
+
+        <img class="RevealL w-100 mt-3 mb-3" src="IMG/beer-6.gif">
+
+        E non è tutto: la nostra birra contiene anche un ingrediente speciale, il luppolo<a style=" font-family: DOP; color:black; text-shadow: 1px 1px 1px black ;"> D.O.P.</a> proveniente da Alessandria (Cascina Motta di Sale), una zona rinomata per la sua agricoltura biologica. Il luppolo <a  style=" font-family: DOP; color:black; text-shadow: 1px 1px 1px black ;"> D.O.P. </a>  conferisce alla nostra birra un aroma delicato e una qualità superiore. Non lasciarti scappare questa occasione! </p>
+
+
+
+    </div>
+
+    <div class="col-sm-8 shadow-lg pt2Container p-4 mb-4 text-center " style="background-color:antiquewhite">
+
+      <h2>-La nostra storia</h2>
+
+      <p class="fs-5">Il barot, nato nel 1824 e tramandato di generazione in generazione, mantenendo viva la tradizione della cucina piemontese. Qui potrete gustare i sapori autentici del nostro territorio, preparati con ingredienti genuini e di stagione. Il nostro locale è un luogo di incontro e di convivialità, dove vi sentirete come a casa vostra. Venite a scoprire la nostra storia e la nostra passione per la buona tavola!</p>
+
+      <div class="container videos RevealL">
+        <video class="w-100 ts2" loop muted autoplay>
+
+          <source  src="IMG/VE%20Project%201.mp4" type="video/mp4">
+
+        </video>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ---------------------------------FINE PARTE 1--------------------------------- -->
+
+
+
+<!-- ---------------------------------INIZIO PARTE 2--------------------------------- -->
+
+<div class="container-fluid mt-5">
+
+  <div class="row mx-5 ms-5 RevealL">
+
+    <div class="col-sm-8 shadow-lg" style="background-color:antiquewhite">
+
+      <h2 class="mt-5">-Qualità</h2>
+      <h5>La nostra qulità è insuperabile!</h5>
+      <p class="fs-5">Siamo orgogliosi di offrire ai nostri clienti solo prodotti selezionati e controllati di origine italiana, che garantiscono la massima qualità e sicurezza. Inoltre, dal 2015 abbiamo scelto di usare esclusivamente prodotti<b><a style="font-family:DOP ; color:black; text-shadow: 1px 1px 1px black ">D.O.P.</a>  </b>(<a style="font-family: DOP; color:black; text-shadow: 1px 1px 1px black "> D </a>enominazione di <a style="font-family: DOP; color:black; text-shadow: 1px 1px 1px black "> O </a>rigine <a style="font-family: DOP; color:black; text-shadow: 1px 1px 1px black "> P </a>rotetta), per valorizzare le eccellenze del nostro territorio e rispettare la tradizione. Tra i prodotti <a style="font-family: DOP; color:black; text-shadow: 1px 1px 1px black "> D.O.P. </a> che utilizziamo ci sono <b>il Parmigiano Reggiano</b>, <b>il Prosciutto di Parma</b>, <b>il Pecorino Romano</b>, <b>l’Aceto Balsamico di Modena</b> e molti altri.</p>
+
+
+
+      <h2>-Personale</h2>
+      <h5 class="fs-5">“La nostra squadra è composta da professionisti esperti e appassionati, che mettono al primo posto la soddisfazione dei nostri clienti. Da anni offriamo servizi di qualità, personalizzati in base alle esigenze e alle preferenze di chi ci sceglie.”</h5>
+      <img class="w-50 mt-4 rounded RevealL" src="IMG/Cuochi.jpg">
+      <p>Qui sopra i nostri cuochi: Giorgiovanni, Bruno, Pino, Camillo e Mario.</p>
+
+
+
+
+    </div>
+
+    <div class="col-sm-4 shadow-lg p-4 mb-0 " style="background-color:peachpuff">
+
+      <h2>-Dove siamo</h2>
+      <p class="fs-5" >Ci troviamo al Pian della Regina, in Italia. Qui potrete godere di una vista mozzafiato sul fiume e sulle colline circostanti, mentre assaporate i nostri piatti tipici della cucina locale, preparati con ingredienti freschi e di qualità. Il nostro locale è accogliente e confortevole, arredato con gusto e cura dei dettagli. Il personale è gentile e professionale, pronto a soddisfare ogni vostra esigenza. Vi aspettiamo per farvi vivere un’esperienza indimenticabile, accompagnata da un buon vino piemontese e da una selezione di dolci tradizionali.</p>
+      <h5>Clicca <a class="links" href="" data-bs-toggle="modal" data-bs-target="#myModal2">qui -></a> per le indicazioni</h5>
+      <!-- Carousel -->
+      <div id="demo1" class="carousel carousel-fade slide" data-bs-ride="carousel">
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner  ">
+          <div class="carousel-item active">
+            <img src="IMG/VallePo.jpg"  class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/VallePo2.jpg"  class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/VallePo3.jpg" alt="New York" class="d-block w-100">
+          </div>
+        </div>
+
+
+      </div>
+
+      <p class="text-center">Qui sopra alcune immagini del posto...</p>
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------------------MODAL-PER-DOVE-SIAMO--------------------------------- -->
+
+
+
+
+<!-- The Modal -->
+<div class="modal fade " id="myModal2">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header feedB">
+        <h4 class="modal-title">Indicazioni</h4>
+        <button type="button" class="btn-close feedL" data-bs-dismiss="modal"> </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body feedL">
+
+        <h4> Clicca sull'immagine per avviare la navigazione su google Maps... </h4>
+
+        <a href="https://goo.gl/maps/wcYQMMyuuvvfBaYH8" > <img class="w-100 rounded img-fluid" src="IMG/Luogo.png" ></a>
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- --------------------------------- FOOTER ----------------------------------- -->
+
+<div class="container-fluid p-5 mt-5 bg-dark text-white text-center">
+
+
+
+  <div class="row ">
+
+    <div class="col fs-5"> <h4>Sostenitori: </h4> <p class="fs-5">Giovanni Visconti; Giovanni Colonna; Pedro Pony; Oleg Cosciug; Karen Giorgia; Mr-Beast; Sergio Mattarella; Ezio Gregio; Il Gabibbo. </p>  </div>
+    <div class="col fs-5"> <h4>Bar in collaborazione: </h4> Dutch Kills; Bemelmans Bar; The NoMad; PDT Please Don’t Tell; Schiller’s Liquor Bar; Campbell Apartment; PRA.  </div>
+    <div class="col fs-5"> <h4>Sponsors:</h4> CocaCola; Birra Poretti; Kawasaki; Asus; Fanta; Ichnusa; Barilla; Pescheria "Lo Scoglio"; Birrificio Cascina Motta di Sale (Alessandria). </div>
+  </div>
+
+
+  <div class="row mt-3">
+    <div class="col">  <p class="fs-4">Visita i nostri social:</p>  <a href="https://www.reddit.com/user/Il_Barot_Official/" class="fa fa-reddit"></a> <a href="https://www.instagram.com/il_barot_official/" class="fa fa-instagram"></a>   <a href="https://pin.it/2e0wHGB" class="fa fa-pinterest"></a> <a href="https://www.facebook.com/profile.php?id=100092064791632" class="fa fa-facebook"></a>  <a href="https://twitter.com/Barot_Officiale" class="fa fa-twitter"></a> </div>
+    <div class="col"> <h4>Contatti: </h4> <p class="fs-5"> Email Proprietario/Creatore: e.piasco.2729@vallauri.edu / Piascot06@gmail.com</p> <p> Telefono: 379-136-6731 </p> <p>Fax: 390639967700@eBarotFax.com</p></div>
+
+  </div>
+
+
+
+
+  <div class="row mt-3 ">
+    <div class="col fs-6"> © Copyrights 1995/2023 – Crissolo. Strada Provinciale 234 – Capitale sociale € 59.000 i.v. P.IVA 11087840010 –
+      <br>Sviluppato da: Enrico Piasco in collaborazione con Piasco Enrico </div>
+
+  </div>
+
+</div>
+
+
+<!-- ---------------------------------PROGRAMMAZIONE SCROLL-REVEAL--------------------------------- -->
+
+
+<script>
+
+  ScrollReveal({ distance: '400px' });
+  ScrollReveal().reveal('.Reveal' ,  { delay: '300' });
+  ScrollReveal().reveal('.RevealL' ,  { origin: 'left'  }, { delay: '450' });
+  ScrollReveal().reveal('.RevealR' ,  { origin: 'right'  }, { delay: '450' });
+
+  ScrollReveal().reveal('.flipZ', {
+    rotate: {
+      z: 180
+    }
+  }, {duration:2000}, {delay: 450});
+
+</script>
+
+
+
+
+</body>
+</html>
